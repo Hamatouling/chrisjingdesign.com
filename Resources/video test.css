@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section {
+    height: 100vh;
+}
+
+p {
+    font-size: 25px;
+    color: gray;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-top: 30vh;
+}

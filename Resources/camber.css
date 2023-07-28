@@ -1,0 +1,975 @@
+* {
+    font-family: 'SF Pro Display', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color:#f5f5f5;
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    background-color: #fff;
+}
+
+.menu-icon-mobile {
+    display: none;
+}
+
+.project-menu {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.project-menu-logo-container {
+    width: 200px;
+    background-color: #fff;
+}
+
+.project-menu img {
+    width: 100%;
+    background-color: #fff;
+}
+
+.project-navigation {
+    background-color: #fff;
+}
+
+.project-navigation ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.project-navigation li {
+    list-style-type: none;
+    margin-left: 40px;
+    background-color: #fff;
+}
+
+.project-navigation a {
+    font-family: 'SF Pro Text', Helvetica, sans-serif;
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    background-color: #fff;
+}
+
+.menu-icon-mobile {
+    display: none;
+  }
+  
+  .menu-icon-animation-mobile {
+    display: none;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .change .bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+
+
+/* Main Content */
+.project-head-section {
+    height: 100vh;
+}
+.project-hero-img {
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.project-name-text {
+    font-size: 60px;
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    background-color: transparent;
+}
+
+/* Content */
+
+.vary-width {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.white-background {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.background-image-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-box,
+.image-box,
+.image-gallery,
+.camber-exhibition{
+    flex: 1;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 100%;
+}
+.video-box {
+    height: 100%;
+    flex: 1;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.video-box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content-text {
+    flex: 1;
+    background-color: #fff;
+    margin: auto 0;
+    padding-right: 30px;
+    opacity: 0;
+}
+h2 {
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.05;
+    letter-spacing: -0.003em;
+    color: rgb(29, 29, 31);
+    background-color: transparent;
+}
+p {
+    font-weight: 500;
+    letter-spacing: 0em;
+    margin: 0;
+    color: rgb(134, 134, 139);
+    background-color: transparent;
+}
+span.camber-word {
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.05;
+    letter-spacing: -0.003em;
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.camber-sketch {
+    background-image: url("./Media/camber-process.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.sketch {
+    display: flex;
+    flex-direction: column;
+}
+.camber-sketch-img {
+    background-image: url("./Media/camber-sketch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.image-gallery {
+    display: flex;
+    flex: 2;
+}
+.gallery-left,
+.gallery-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+.gallery-left-top {
+    background-image: url("./Media/camber-gallery-left-top.JPG");
+    flex: 1.5;
+}
+.gallery-left-bottom {
+    background-image: url("./Media/camber-gallery-left-bottom.JPG");
+    flex: 1;
+}
+.gallery-right-top {
+    background-image: url("./Media/camber-gallery-right-top.JPG");
+    flex: 1;
+}
+.gallery-right-bottom {
+    background-image: url("./Media/camber-gallery-right-bottom.JPG");
+    flex: 1.5;
+}
+.fabrication {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 18px;
+    background-image: linear-gradient(180deg,#8be962 29%,#6cd179 87%);
+}
+.fabrication p {
+    color: rgb(29, 29, 31);
+}
+.fabrication-box {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.exhibition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+.exhibition-text-box {
+    background-color: transparent;
+    margin-top: 30px;
+}
+.camber-exhibition {
+    background-image: url("./Media/icff-2.JPG");
+}
+.icff-exhibition-img {
+    background-image: url("./Media/icff-1.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    margin-top: 80px;
+}
+.camber-exhibition-neocon {
+    background-image: url("./Media/neocon-2.jpg");
+}
+.neocon-exhibition-img {
+    background-image: url("./Media/neocon-1.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    margin-top: 80px;
+}
+.whole-image img {
+    width: 100%;
+    border-radius: 18px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.no-right-radius {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.video-box-mobile {
+    display: none;
+}
+.content-text-mobile {
+    display: none;
+}
+/* Footer */
+
+.footer {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+  
+.footer img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 1441px) {
+    .project-menu {
+        width: 980px;
+    }
+    .project-hero-img {
+        background-image: url("./Media/camber-hero-high.png");
+    }
+    .vary-width {
+        width: 1200px;
+    }
+    .content {
+        height: 100vh;
+    }
+    .content-text {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    h2,
+    span.camber-word {
+        font-size: 56px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 19px;
+        line-height: 1.2105263158;
+        margin-bottom: 10px;
+    }
+    .camber-sketch-img,
+    .icff-exhibition-img,
+    .neocon-exhibition-img {
+        height: 300px;
+    }
+    .gallery-left-top {
+        margin-bottom: 15px;
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-left-bottom {
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-top {
+        margin-bottom: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-bottom {
+        border-radius: 18px;
+    }
+    .fabrication {
+        margin-left: 15px;
+        padding-left: 80px;
+        margin-right: 0;
+    }
+    .video-box {
+        flex: 1.5;
+    }
+    .camber-sketch-img {
+        background-color: transparent;
+        margin-top: 100px;
+    }
+    .exhibition {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        padding-right: 0;
+    }
+    .neocon {
+        padding-top: 120px;
+    }
+    .ar-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 18px;
+        overflow: hidden;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-top: 30px;
+    }
+    .ar-text,
+    .ar-section,
+    .ar-section h2,
+    .ar-section a {
+        background-color: #fff;
+    }
+    .ar-section a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .ar-section img {
+        width: 30%;
+        margin-top: 60px;
+    }
+    .ar-mobile {
+        display: none;
+    }
+    .ar-icon {
+        background-image: url("./Media/ar_icon__cp17ueesnqvm_medium.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px;
+        padding-bottom: 200px;
+    }
+    .footer img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1069px) {
+    .project-menu {
+        width: 980px;
+    }
+    .project-hero-img {
+        background-image: url("./Media/camber-hero-high.png");
+    }
+    .vary-width {
+        width: 950px;
+    }
+    .content {
+        height: 100vh;
+    }
+    .content-text {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    h2,
+    span.camber-word {
+        font-size: 56px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 19px;
+        line-height: 1.2105263158;
+        margin-bottom: 10px;
+    }
+    .camber-sketch-img,
+    .icff-exhibition-img,
+    .neocon-exhibition-img {
+        height: 300px;
+    }
+    .gallery-left-top {
+        margin-bottom: 15px;
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-left-bottom {
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-top {
+        margin-bottom: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-bottom {
+        border-radius: 18px;
+    }
+    .fabrication {
+        margin-left: 15px;
+        padding-left: 40px;
+    }
+    .video-box {
+        flex: 1.5;
+    }
+    .camber-sketch-img {
+        background-color: transparent;
+        margin-top: 100px;
+    }
+    .exhibition {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        padding-right: 80px;
+    }
+    .neocon {
+        padding-top: 120px;
+    }
+    .ar-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 18px;
+        overflow: hidden;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-top: 30px;
+    }
+    .ar-text,
+    .ar-section,
+    .ar-section h2,
+    .ar-section a {
+        background-color: #fff;
+    }
+    .ar-section a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .ar-section img {
+        width: 30%;
+        margin-top: 60px;
+    }
+    .ar-mobile {
+        display: none;
+    }
+    .ar-icon {
+        background-image: url("./Media/ar_icon__cp17ueesnqvm_medium.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px;
+        padding-bottom: 200px;
+    }
+    .footer img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) {
+    .project-menu {
+        width: 670px;
+    }
+    .project-hero-img {
+        background-image: url("./Media/camber-hero-high.png");
+    }
+    .vary-width {
+        width: 670px;
+    }
+    .content {
+        height: 100vh;
+    }
+    .content-text {
+        margin-left: 50px;
+    }
+    h2,
+    span.camber-word {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 1.2105263158;
+        margin-bottom: 10px;
+    }
+    .camber-sketch-img,
+    .icff-exhibition-img,
+    .neocon-exhibition-img {
+        height: 200px;
+        margin-top: 40px;
+    }
+    .neocon {
+        margin-top: 80px;
+    }
+    .camber-sketch-img {
+        height: 200px;
+        width: 280px;
+        background-color: #fff;
+        margin-top: 5px;
+    }
+    .gallery-left-top {
+        margin-bottom: 15px;
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-left-bottom {
+        margin-right: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-top {
+        margin-bottom: 15px;
+        border-radius: 18px;
+    }
+    .gallery-right-bottom {
+        border-radius: 18px;
+    }
+    .fabrication {
+        margin-left: 15px;
+        padding-left: 30px;
+    }
+    .ar-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 18px;
+        overflow: hidden;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+    .ar-text,
+    .ar-section,
+    .ar-section h2,
+    .ar-section a {
+        background-color: #fff;
+    }
+    .ar-section a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .ar-section img {
+        width: 30%;
+        margin-top: 30px;
+    }
+    .ar-mobile {
+        display: none;
+    }
+    .ar-icon {
+        background-image: url("./Media/ar_icon__cp17ueesnqvm_medium.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 734px) and (min-width: 416px) {
+    .project-menu {
+        width: 85%;
+    }
+    .project-hero-img {
+        background-image: url("./Media/camber-1-frames/camber.797.25.png");
+    }
+    .project-navigation {
+        display: none;
+    }
+    .home-menu {
+        height: auto;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .home-menu-logo-container {
+        width: 200px;
+    }
+    .home-navigation {
+        display: none;
+    }
+    .menu-icon-mobile {
+        display: none;
+        height: 20px;
+        object-fit: contain;
+        object-position: right;
+    }
+    .menu-icon-animation-mobile {
+        display: inline-block;
+        background-color: #fff;
+    }
+    h2,
+    span.camber-word {
+        font-size: 34px;
+        margin-bottom: 20px;
+        letter-spacing: 0.004em;
+    }
+    p {
+        font-size: 17px;
+        line-height: 1.2105263158;
+        margin-bottom: 10px;
+    }
+    .vary-width {
+        width: 400px;
+    }
+    .video-box,
+    .image-box,
+    .image-gallery,
+    .camber-exhibition{
+        flex: none;
+    }
+    .white-background {
+        background-color: transparent;
+        flex-direction: column;
+    }
+    .video-box {
+        height: 640px;
+        border-radius: 18px;
+    }
+    .video-box video {
+        height: 100%;
+    }
+    .content {
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .content-text {
+        margin-top: 30px;
+        padding: 30px;
+        flex: none;
+        background-color: #e5e5e5;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+    .camber-sketch {
+        height: 500px;
+        width: 100%;
+    }
+    .fabrication {
+        margin: 0;
+    }
+    .fabrication-box {
+        flex-direction: column-reverse;
+    }
+    .image-gallery {
+        height: 2000px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .gallery-left-top,
+    .gallery-left-bottom,
+    .gallery-right-top,
+    .gallery-right-bottom {
+        flex: 1;
+        border-radius: 18px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+    .camber-exhibition,
+    .camber-exhibition-neocon {
+        height: 500px;
+        border-radius: 18px;
+    }
+    .icff-exhibition-img,
+    .neocon-exhibition-img {
+        display: none;
+    }
+    .exhibition-text-box {
+        margin: 0;
+    }
+    .ar-section,
+    .ar-text,
+    .ar-text a {
+        background-color: #fff;
+        border-radius: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .ar-section img {
+        display: none;
+    }
+    .ar-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .ar-text img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 200px;
+    }
+    .ar-section {
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .ar-icon {
+        background-image: url("./Media/ar_icon__cp17ueesnqvm_medium.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    .project-menu {
+        width: 85%;
+    }
+    .project-hero-img {
+        background-image: url("./Media/camber-1-frames/camber.797.25.png");
+    }
+    .project-navigation {
+        display: none;
+    }
+    .home-menu {
+        height: auto;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .home-menu-logo-container {
+        width: 48vw;
+    }
+    .home-navigation {
+        display: none;
+    }
+    .menu-icon-mobile {
+        display: none;
+        height: 5vw;
+        object-fit: contain;
+        object-position: right;
+    }
+    .menu-icon-animation-mobile {
+        display: inline-block;
+        background-color: #fff;
+    }
+    h2 {
+        font-size: 34px;
+        margin-bottom: 20px;
+        letter-spacing: 0.004em;
+    }
+    p {
+        font-size: 17px;
+        line-height: 1.2105263158;
+        margin-bottom: 10px;
+    }
+    .vary-width {
+        width: 80vw;
+    }
+    .video-box,
+    .image-box,
+    .image-gallery,
+    .camber-exhibition{
+        flex: none;
+    }
+    .white-background {
+        background-color: transparent;
+        flex-direction: column;
+    }
+    .video-box {
+        height: 150vw;
+        border-radius: 18px;
+    }
+    .video-box video {
+        height: 100%;
+    }
+    .content {
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .content-text {
+        margin-top: 30px;
+        padding: 30px;
+        flex: none;
+        background-color: #e5e5e5;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+    .camber-sketch {
+        height: 120vw;
+        width: 100%;
+    }
+    .fabrication {
+        margin: 0;
+    }
+    .fabrication-box {
+        flex-direction: column-reverse;
+    }
+    .image-gallery {
+        height: 480vw;
+        width: 100%;
+        flex-direction: column;
+    }
+    .gallery-left-top,
+    .gallery-left-bottom,
+    .gallery-right-top,
+    .gallery-right-bottom {
+        flex: 1;
+        border-radius: 18px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+    .camber-exhibition,
+    .camber-exhibition-neocon {
+        height: 120vw;
+        border-radius: 18px;
+    }
+    .icff-exhibition-img,
+    .neocon-exhibition-img {
+        display: none;
+    }
+    .exhibition-text-box {
+        margin: 0;
+    }
+    .ar-section,
+    .ar-text,
+    .ar-text a {
+        background-color: #fff;
+        border-radius: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .ar-section img {
+        display: none;
+    }
+    .ar-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .ar-text img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10vw;
+        width: 48vw;
+    }
+    .ar-section {
+        padding-top: 12vw;
+        padding-left: 7.2vw;
+        padding-right: 7.2vw;
+    }
+    .ar-icon {
+        background-image: url("./Media/ar_icon__cp17ueesnqvm_medium.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer img {
+        width: 100%;
+    }
+}

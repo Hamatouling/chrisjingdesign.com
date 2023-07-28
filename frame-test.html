@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="move">
+        <fieldset>
+            <legend>Toggle duration</legend>
+            <div>
+                <input type="radio" name="duration" id="bound" value="3000" checked="">
+                <label for="bound">bound to scrollbar (duration = 3000)</label>
+            </div>
+            <div>
+                <input type="radio" name="duration" id="unbound" value="0">
+                <label for="unbound">unbound from scrollbar (duration = 0)</label>
+            </div>
+        </fieldset>
+    </form>
+    <div class="spacer s2"></div>
+    <div class="spacer s0" id="trigger"></div>
+    <div id="imagesequence">
+        <img id="myimg" src="./Resources/Media/camber-1-frames/camber.797.1.png"><br>
+        <a href="#" class="viewsource">view source</a>
+    </div>
+    <div class="spacer s2"></div>
+    <script>
+        // define images
+        var images = [
+            "./Resources/Media/camber-1-frames/camber.797.1.png",
+            "./Resources/Media/camber-1-frames/camber.797.2.png",
+            "./Resources/Media/camber-1-frames/camber.797.3.png",
+            "./Resources/Media/camber-1-frames/camber.797.4.png",
+            "./Resources/Media/camber-1-frames/camber.797.5.png",
+            "./Resources/Media/camber-1-frames/camber.797.6.png",
+            "./Resources/Media/camber-1-frames/camber.797.7.png",
+            "./Resources/Media/camber-1-frames/camber.797.8.png",
+            "./Resources/Media/camber-1-frames/camber.797.9.png",
+            "./Resources/Media/camber-1-frames/camber.797.10.png",
+            "./Resources/Media/camber-1-frames/camber.797.11.png",
+            "./Resources/Media/camber-1-frames/camber.797.12.png",
+            "./Resources/Media/camber-1-frames/camber.797.13.png",
+            "./Resources/Media/camber-1-frames/camber.797.14.png",
+            "./Resources/Media/camber-1-frames/camber.797.15.png",
+            "./Resources/Media/camber-1-frames/camber.797.16.png",
+            "./Resources/Media/camber-1-frames/camber.797.17.png",
+            "./Resources/Media/camber-1-frames/camber.797.18.png",
+            "./Resources/Media/camber-1-frames/camber.797.19.png",
+            "./Resources/Media/camber-1-frames/camber.797.20.png",
+            "./Resources/Media/camber-1-frames/camber.797.21.png",
+            "./Resources/Media/camber-1-frames/camber.797.22.png",
+            "./Resources/Media/camber-1-frames/camber.797.23.png",
+            "./Resources/Media/camber-1-frames/camber.797.24.png",
+            "./Resources/Media/camber-1-frames/camber.797.25.png",
+            "./Resources/Media/camber-1-frames/camber.797.26.png",
+            "./Resources/Media/camber-1-frames/camber.797.27.png",
+            "./Resources/Media/camber-1-frames/camber.797.28.png",
+            "./Resources/Media/camber-1-frames/camber.797.29.png",
+            "./Resources/Media/camber-1-frames/camber.797.30.png",
+            "./Resources/Media/camber-1-frames/camber.797.31.png",
+            "./Resources/Media/camber-1-frames/camber.797.32.png",
+            "./Resources/Media/camber-1-frames/camber.797.33.png",
+            "./Resources/Media/camber-1-frames/camber.797.34.png",
+            "./Resources/Media/camber-1-frames/camber.797.35.png",
+            "./Resources/Media/camber-1-frames/camber.797.36.png",
+            "./Resources/Media/camber-1-frames/camber.797.37.png",
+            "./Resources/Media/camber-1-frames/camber.797.38.png",
+            "./Resources/Media/camber-1-frames/camber.797.39.png",
+            "./Resources/Media/camber-1-frames/camber.797.40.png",
+            "./Resources/Media/camber-1-frames/camber.797.41.png",
+            "./Resources/Media/camber-1-frames/camber.797.42.png",
+            "./Resources/Media/camber-1-frames/camber.797.43.png",
+            "./Resources/Media/camber-1-frames/camber.797.44.png",
+            "./Resources/Media/camber-1-frames/camber.797.45.png",
+            "./Resources/Media/camber-1-frames/camber.797.46.png"
+
+        ];
+    
+        // TweenMax can tween any property of any object. We use this object to cycle through the array
+        var obj = {curImg: 0};
+    
+        // create tween
+        var tween = TweenMax.to(obj, 0.5,
+            {
+                curImg: images.length - 1,	// animate propery curImg to number of images
+                roundProps: "curImg",				// only integers so it can be used as an array index
+								// repeat 3 times
+                immediateRender: true,			// load first image automatically
+                ease: Linear.easeNone,			// show every image the same ammount of time
+                onUpdate: function () {
+                  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+                }
+            }
+        );
+    
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
+                        .setTween(tween)
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+    
+        // handle form change
+        $("form.move input[name=duration]:radio").change(function () {
+            scene.duration($(this).val());
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,771 @@
+* {
+  font-family: 'SF Pro Display', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color:#ebebec;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  background-color: #fff;
+}
+
+.menu-icon-mobile {
+  display: none;
+}
+
+.project-menu {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.project-menu-logo-container {
+  width: 200px;
+  background-color: #fff;
+}
+
+.project-menu img {
+  width: 100%;
+  background-color: #fff;
+}
+
+.project-navigation {
+  background-color: #fff;
+}
+
+.project-navigation ul {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.project-navigation li {
+  list-style-type: none;
+  margin-left: 40px;
+  background-color: #fff;
+}
+
+.project-navigation a {
+  font-family: 'SF Pro Text', Helvetica, sans-serif;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  background-color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  overflow: visible;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.project-card-image {
+  background-image: url("./Media/about-me-image.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  flex-basis: auto;
+}
+
+.project-card-text {
+  flex: 1;
+  background-color:#fff;
+  align-content: center;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.003em;
+  background-color:#fff;
+  margin-top: 0;
+}
+
+p {
+  font-weight: 500;
+  letter-spacing: 0em;
+  background-color:#fff;
+  color: #86868b;
+  margin: 10px 0;
+}
+
+.img-text {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 18px;
+  justify-content: center;
+}
+
+.resume-card-double {
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  margin-top: 30px
+}
+
+.project-card-double {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 60px;
+}
+
+.right {
+  margin-left: 30px;
+}
+
+.project-card-double-mobile {
+  display: none;
+}
+
+.resume-title, .award-title {
+  background-color: #fff;
+  background-image: linear-gradient(180deg,#8be962 29%,#6cd179 87%);
+  border-radius: 18px;
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-margin {
+  margin: 0;
+  background: none;
+}
+
+
+.award-title {
+  background-image: none;
+  background-color: #fff;
+}
+
+.award-title h2 {
+  background-image: linear-gradient(163deg,#CD4DCA,#7460CB 44%,#1AB4D5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.award-detail {
+  background-color: #fff;
+  border-radius: 18px;
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.keep-in-touch {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between
+}
+
+.keep-in-touch-text {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-pdf {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+}
+
+.download-pdf img {
+  background-color: #fff;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.keep-in-touch-image {
+  height: 250px;
+  background-color: #fff;
+  margin-right: 100px;
+}
+
+.keep-in-touch-image img {
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer img {
+  max-width: 30vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-card-text-mobile {
+  display: none;
+}
+
+/* Test */
+.education {
+  transform: translateY(30vh);
+  transition: all 0.8s ease-out;
+  opacity: 0;
+}
+.contact {
+  transform: translateY(50vh);
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+.passion {
+  transform: translateY(50vh);
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+.education.visible,
+.contact.visible,
+.passion.visible {
+  transform: none;
+  opacity: 1;
+}
+
+
+
+/* responsive design */
+@media only screen and (min-width: 1441px) {
+  .main-content {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .project-menu {
+    width: 980px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.2105263158;
+  }
+
+  .project-card {
+    height: 600px;
+  }
+
+  .project-card-text {
+    margin: auto 60px;
+  }
+
+  .resume-card-double {
+    height: 500px;
+  }
+
+  .project-card-double {
+    padding-left: 60px;
+  }
+
+  .resume-card {
+    height: 800px;
+    padding-left: 60px;
+  }
+
+  .experience {
+    height: 600px;
+  }
+
+  .resume-title, .award-title {
+    height: 150px;
+    padding-left: 60px;
+  }
+
+  .award-detail {
+    height: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .keep-in-touch {
+    height: 400px;
+  }
+
+  .keep-in-touch-text {
+    padding-left: 60px;
+  }
+  .footer {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    padding-bottom: 200px;
+  }
+  .footer img {
+      width: 100%;
+  }
+}
+@media only screen and (min-width: 1069px) and (max-width: 1440px) {
+  .main-content {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .project-menu {
+    width: 980px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.2105263158;
+  }
+
+  .project-card {
+    height: 600px;
+  }
+
+  .project-card-text {
+    margin: auto 60px;
+  }
+
+  .resume-card-double {
+    height: 500px;
+  }
+
+  .project-card-double {
+    padding-left: 60px;
+  }
+
+  .resume-card {
+    height: 800px;
+    padding-left: 60px;
+  }
+
+  .experience {
+    height: 600px;
+  }
+
+  .resume-title, .award-title {
+    height: 150px;
+    padding-left: 60px;
+  }
+
+  .award-detail {
+    height: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .keep-in-touch {
+    height: 400px;
+  }
+
+  .keep-in-touch-text {
+    padding-left: 60px;
+  }
+  .footer {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    padding-bottom: 200px;
+  }
+  .footer img {
+      width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) {
+  .main-content {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .project-menu {
+    width: 700px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.2941176471;
+  }
+
+  .project-card {
+    height: 400px;
+  }
+
+  .project-card-text {
+    margin: auto 60px;
+  }
+
+  .resume-card-double {
+    height: 350px;
+  }
+
+  .project-card-double {
+    padding-left: 40px;
+  }
+
+  .resume-card {
+    height: 600px;
+    padding-left: 40px;
+  }
+
+  .experience {
+    height: 500px;
+  }
+
+  .resume-title, .award-title {
+    height: 100px;
+    padding-left: 40px;
+  }
+
+  .award-detail {
+    height: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .keep-in-touch {
+    height: 300px;
+  }
+
+  .keep-in-touch-text {
+    padding-left: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 734px) and (min-width: 416px) {
+  .main-content {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .project-menu {
+    width: 360px;
+  }
+
+  .project-menu-logo-container {
+    width: 300px;
+  }
+
+  .project-navigation {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.2941176471;
+    margin: 10px 0;
+  }
+
+  .img-text {
+    margin: 5px 0;
+  }
+
+  .project-card {
+    height: 600px;
+  }
+
+  .project-card-text {
+    margin: auto 60px;
+  }
+
+  .resume-card-double {
+    height: 270px;
+  }
+
+  .project-card-double {
+    padding-left: 30px;
+  }
+
+  .resume-card {
+    height: auto;
+    padding: 30px;
+  }
+
+  .experience {
+    height: 500px;
+  }
+
+  .resume-title, .award-title {
+    height: 100px;
+    padding-left: 30px;
+  }
+
+  .award-detail {
+    height: auto;
+    padding: 30px;
+  }
+
+  .keep-in-touch {
+    height: auto;
+  }
+
+  .keep-in-touch-text {
+    padding: 30px;
+  }
+
+  .keep-in-touch-image {
+    height: 200px;
+    margin-right: 0;
+  }
+
+  /* format change */
+
+  .project-card-text {
+    display: none;
+  }
+
+  .project-card-text-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 30px;
+    height: auto;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .project-card-double-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 30px;
+    height: 200px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .resume-card-double-right {
+    display: flex;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .resume-card-double {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-card-double {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .menu-icon-mobile {
+    display: block;
+    height: 20px;
+    object-fit: contain;
+    object-position: right;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .main-content {
+    width: 86.5vw;
+    margin: 0 auto;
+  }
+
+  .project-menu {
+    width: 86.5vw;
+  }
+
+  .project-menu-logo-container {
+    width: 72vw;
+  }
+
+  .project-navigation {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.2941176471;
+    margin: 10px 0;
+  }
+
+  .img-text {
+    margin: 5px 0;
+  }
+
+  .project-card {
+    height: 144vw;
+  }
+
+  .project-card-text {
+    margin: auto 60px;
+  }
+
+  .resume-card-double {
+    height: 270px;
+  }
+
+  .project-card-double {
+    padding: 30px;
+  }
+
+  .resume-card {
+    height: auto;
+    padding: 30px;
+  }
+
+  .experience {
+    height: 500px;
+  }
+
+  .resume-title, .award-title {
+    height: 100px;
+    padding-left: 30px;
+  }
+
+  .award-detail {
+    height: auto;
+    padding: 30px;
+  }
+
+  .keep-in-touch {
+    height: auto;
+  }
+
+  .keep-in-touch-text {
+    padding: 30px;
+  }
+
+  .keep-in-touch-image {
+    display: none;
+  }
+
+  /* format change */
+
+  .project-card-text {
+    display: none;
+  }
+
+  .project-card-text-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 30px;
+    height: auto;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .project-card-double-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 30px;
+    height: 200px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .resume-card-double-right {
+    display: flex;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .resume-card-double {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-card-double {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .menu-icon-mobile {
+    display: block;
+    height: 20px;
+    object-fit: contain;
+    object-position: right;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
