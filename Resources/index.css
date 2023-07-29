@@ -169,6 +169,9 @@ display: block;
   .image-row {
     height: 495px;
   }
+  .footer img {
+    width: 400px;
+  }
 
 }
 
