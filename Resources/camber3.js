@@ -119,7 +119,7 @@ const scene3 = new ScrollMagic.Scene({
     duration: 5500,
     triggerHook: 0
 })
-    .addIndicators()
+    //.addIndicators()
     .setPin(videoBox3)
     .addTo(controller);
 
@@ -142,7 +142,7 @@ const sceneText3 = new ScrollMagic.Scene({
     duration: "80%",
     triggerHook: 0.5
 })
-    .addIndicators()
+    //.addIndicators()
     .addTo(controller);
 
 sceneText3.on('update', e=>{
