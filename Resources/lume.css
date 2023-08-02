@@ -91,6 +91,21 @@ header {
     transform: translate(0, -9px) rotate(45deg);
   }
 
+/* Main Content */
+
+.background-image-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lume-hero-section,
+.lume-intro-section {
+    height: 100vh;
+}
+.lume-hero-section-img {
+    background-image: url("./Media/lume-main.png");
+
+}
 
 /* Responsive Design */
 @media only screen and (min-width: 1441px) {
