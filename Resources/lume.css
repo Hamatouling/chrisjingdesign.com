@@ -119,14 +119,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
     margin: 0 auto;
+    background-color: black;
 }
 .lume-intro-text {
+    width: 80vw;
     font-size: 30px;
     font-weight: 500;
-    color: grey;
+    color: #ccc;
     text-align: center;
+    background-color: transparent;
 }
 
 /* Responsive Design */
