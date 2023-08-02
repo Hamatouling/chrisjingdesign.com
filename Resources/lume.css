@@ -94,22 +94,32 @@ header {
 
 /* Responsive Design */
 @media only screen and (min-width: 1441px) {
- 
+    .project-menu {
+        width: 980px;
+    }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 1069px) {
-
+    .project-menu {
+        width: 980px;
+    }
 }
 
 @media only screen and (max-width: 1068px) and (min-width: 735px) {
-
+    .project-menu {
+        width: 670px;
+    }
 }
 
 @media only screen and (max-width: 734px) and (min-width: 416px) {
-
+    .project-menu {
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 415px) {
-
+    .project-menu {
+        width: 85%;
+    }
 }
 
