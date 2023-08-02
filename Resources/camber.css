@@ -299,6 +299,9 @@ span.camber-word {
 .content-text-mobile {
     display: none;
 }
+.ar-section img {
+    background-color: transparent;
+}
 /* Footer */
 
 .footer {
