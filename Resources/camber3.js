@@ -51,16 +51,17 @@ scene1.on('update', e=>{
     scrollpos1 = (e.scrollPos - 70 - window.innerHeight - window.innerHeight) / window.innerHeight;
     //console.log(e.scrollPos- 70, window.innerHeight, scrollpos1);
     //scrollpos1 = (e.scrollPos-890);
-    v1.currentTime = scrollpos1;
+    console.log(scrollpos1);
+    //v1.currentTime = scrollpos1;
 });
 
-//setInterval(() =>{
-    //delay += (scrollpos1 - delay) * accelamount;
+setInterval(() =>{
+    delay += (scrollpos1 - delay) * accelamount;
     //console.log(scrollpos1);
     //console.log(videoBox1.offsetHeight);
-    //v1.currentTime = scrollpos1;
+    v1.currentTime = scrollpos1;
     //console.log(v1.currentTime);
-//}, 33.3);
+}, 33.3);
 
 //Text 1
 const sceneText1 = new ScrollMagic.Scene({
@@ -146,6 +147,6 @@ const sceneText3 = new ScrollMagic.Scene({
     .addTo(controller);
 
 sceneText3.on('update', e=>{
-    console.log(e.scrollPos - 70 - window.innerHeight - window.innerHeight - 2000 - window.innerHeight - 2500 - (window.innerHeight / 2));
+    //console.log(e.scrollPos - 70 - window.innerHeight - window.innerHeight - 2000 - window.innerHeight - 2500 - (window.innerHeight / 2));
     text3.style.opacity = (e.scrollPos - 70 - window.innerHeight - window.innerHeight - 2000 - window.innerHeight - 2500 - (window.innerHeight / 2)) / window.innerHeight;
 })
