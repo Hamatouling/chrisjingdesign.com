@@ -109,11 +109,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-.lume-hero-section-title {
+#hero-text {
     background-color: transparent;
-    font-size: 56px;
     font-weight: 600;
+    width: 450px;
+    height: 200px;
+    background-image: url("./Media/lume\ title.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .lume-intro-section {
     display: flex;
@@ -124,10 +131,16 @@ header {
 }
 .lume-intro-text {
     width: 80vw;
+    max-width: 980px;
     font-size: 30px;
     font-weight: 500;
     color: #ccc;
     text-align: center;
+    background-color: transparent;
+}
+#title-text {
+    font-size: 30px;
+    font-weight: 500;
     background-color: transparent;
 }
 
