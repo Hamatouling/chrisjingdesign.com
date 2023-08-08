@@ -109,13 +109,16 @@ let lumeOutdoortl = gsap.timeline({
 });
 
 lumeOutdoortl.to(lumeOutdoorImage, {
-    backgroundColor: "#fff",
+    //backgroundColor: "#eee",
     duration: 1.5,
     backgroundPosition: "left 20% top 50%"
 })
 .to(lumeOutdoorTitle, {
     opacity: "0"
     //left: "10%"
+}, 0)
+.to(lumeOutdoorBox, {
+    backgroundColor: "#eee"
 }, 0)
 .to(lumeOutdoorText1, {
     display: "flex",
@@ -158,13 +161,16 @@ let lumeHometl = gsap.timeline({
 });
 
 lumeHometl.to(lumeHomeImage, {
-    backgroundColor: "#fff",
+    //backgroundColor: "#eee",
     duration: 1.5,
     backgroundPosition: "left 20% top 50%"
 })
 .to(lumeHomeTitle, {
     opacity: "0"
     //left: "10%"
+}, 0)
+.to(lumeHomeBox, {
+    backgroundColor: "#eee"
 }, 0)
 .to(lumeHomeText1, {
     display: "flex",

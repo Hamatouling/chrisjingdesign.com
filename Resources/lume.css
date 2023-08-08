@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #eee;
+}
 
 /* Menu */
 header {
@@ -163,7 +166,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #000000;
+    background-color: transparent;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -177,7 +180,9 @@ header {
 }
 .lume-outdoor-no-background {
     background-image: url("./Media/lume-outdoor-no-background-2.png");
-    background-size: 28%;
+    background-size: contain;
+    max-height: 65vh;
+    max-width: 1200px;
 }
 /* .lume-outdoor-left {
     background-position: left 10vw top 50%;
@@ -185,7 +190,9 @@ header {
 } */
 .lume-home-no-background {
     background-image: url("./Media/lume-home-no-background-2.png");
-    background-size: 28%;
+    background-size: contain;
+    max-height: 50vh;
+    max-width: 1200px;
 }
 .lume-outdoor-text,
 .lume-home-text {
@@ -197,7 +204,7 @@ header {
     background-color: transparent;
     opacity: 0;
     transform: translateY(100vh);
-    margin-left: 40vw;
+    margin-left: 35vw;
 }
 .lume-outdoor-text-animation {
     display: flex;
@@ -221,6 +228,106 @@ header {
     margin-top: 20px;
     color: #86868b;
     font-weight: 500;
+}
+
+/* Lume Brief */
+.lume-brief-box {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.lume-section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #424245;
+}
+.lume-brief-img {
+    background-image: url("./Media/lume-brief.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 18px;
+}
+.lume-brief-text {
+    display: flex;
+    margin-top: 80px;
+    gap: 80px;
+}
+.lume-brief-text-left {
+    height: 100%;
+    flex: 1;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
+}
+.lume-brief-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.142857;
+}
+.lume-brief-text-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    gap: 50px;
+}
+.lume-brief-paragraph {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
+}
+
+/* Lume Opportunity */
+.lume-opp-box {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.lume-opp-img {
+    background-image: url("./Media/lume-opp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 18px;
+}
+.lume-opp-text {
+    display: flex;
+    margin-top: 80px;
+    gap: 80px;
+}
+.lume-opp-text-left {
+    height: 100%;
+    flex: 1;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
+}
+.lume-opp-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.142857;
+}
+.lume-opp-text-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    gap: 50px;
+}
+.lume-opp-paragraph {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
 }
 
 
