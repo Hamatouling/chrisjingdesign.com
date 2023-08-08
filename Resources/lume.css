@@ -2,7 +2,7 @@
     font-family: 'SF Pro Display', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    background-color:#fff;
+    background-color: transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -143,6 +143,81 @@ header {
     font-weight: 500;
     background-color: transparent;
 }
+.lume-product-landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+.lume-product-name {
+    display: none;
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    opacity: 0;
+}
+.lume-outdoor-no-background,
+.lume-home-no-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lume-outdoor-no-background video {
+    height: 100px;
+    position: absolute;
+    left: 30px;
+}
+.lume-outdoor-no-background {
+    background-image: url("./Media/lume-outdoor-no-background-2.png");
+    background-size: 28%;
+}
+/* .lume-outdoor-left {
+    background-position: left 10vw top 50%;
+    background-color: #fff;
+} */
+.lume-home-no-background {
+    background-image: url("./Media/lume-home-no-background.png");
+}
+.lume-outdoor-text {
+    display: none;
+    flex-direction: column;
+    color: #000;
+    max-width: 500px;
+    margin-left: 50px;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(100vh);
+    margin-left: 40vw;
+}
+.lume-outdoor-text-animation {
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+.lume-outdoor-text h4 {
+    font-size: 25px;
+}
+.lume-outdoor-text h3 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    margin-top: 10px;
+}
+.lume-outdoor-text p {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #86868b;
+    font-weight: 500;
+}
+
 
 /* Responsive Design */
 @media only screen and (min-width: 1441px) {

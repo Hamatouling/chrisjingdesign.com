@@ -2,6 +2,12 @@ const heroText = document.getElementById('hero-text');
 const heroBox = document.getElementById('hero-box');
 const titleText = document.getElementById('title-text');
 const titleBox = document.getElementById('title-box');
+const lumeOutdoorBox = document.getElementById('lume-outdoor-box');
+const lumeOutdoorImage = document.getElementById('lume-outdoor-img');
+const lumeOutdoorTitle = document.getElementById('lume-outdoor-large-title');
+const lumeOutdoorText1 = document.getElementById('lume-outdoor-text-1');
+const lumeOutdoorText2 = document.getElementById('lume-outdoor-text-2');
+const lumeOutdoorVideo = document.getElementById('lume-outdoor-video');
 
 const controller = new ScrollMagic.Controller();
 
@@ -19,7 +25,7 @@ sceneHero.on('update', e=>{
     scrollpos = (e.scrollPos - 70)*(200/window.innerHeight);
     scrollpos2 = (e.scrollPos - 70)*(20/window.innerHeight);
     scrollpos3 = (e.scrollPos - 70 - (window.innerHeight*0.32))*(400/window.innerHeight)+6.4;
-    console.log(e.scrollPos-70, scrollpos, scrollpos2, scrollpos3, window.innerHeight);
+    //console.log(e.scrollPos-70, scrollpos, scrollpos2, scrollpos3, window.innerHeight);
     
     if (scrollpos2 >= 1 && scrollpos <= 64){
         heroText.style.transform = "matrix(" + scrollpos2 + ", 0, 0, " + scrollpos2 + ", 0, 0)";
@@ -36,7 +42,7 @@ const sceneTitle = new ScrollMagic.Scene({
     duration: "100%",
     triggerHook: 0
 })
-    //.addIndicators()
+    .addIndicators()
     .setPin(titleBox)
     .addTo(controller);
 
@@ -54,3 +60,81 @@ addEventListener('scroll',()=>{
     //console.log(color2);
     }
 })
+
+//lume outdoor
+// const sceneLumeOutdoorImg = new ScrollMagic.Scene({
+//     triggerElement: lumeOutdoorBox,
+//     duration: "100%",
+//     triggerHook: 0
+// })
+//     .addIndicators()
+//     //.setClassToggle(lumeOutdoorImage, "lume-outdoor-left")
+//     .setPin(lumeOutdoorBox)
+//     sceneLumeOutdoorImg.setTween(TweenMax.to(lumeOutdoorImage), 1, {backgroundPosition:"left 10vw top 50%", backgroundColor:"#fff"})
+//     .addTo(controller);
+//     sceneLumeOutdoorImg.on("progress", e=>{
+//         console.log(e.progress);
+//     })
+
+// const sceneLumeOutdoorTitle = new ScrollMagic.Scene({
+//     triggerElement: lumeOutdoorBox,
+//     duration: 2000,
+//     triggerHook: 0
+// })
+//     .addIndicators()
+//     //.setPin(lumeOutdoorBox)
+//     .setClassToggle(lumeOutdoorText, "lume-outdoor-text-animation")
+//     //.setClassToggle(lumeOutdoorImage, "lume-outdoor-left")
+//     .addTo(controller);
+
+
+//Lume Outdoor ScrollTrigger
+
+gsap.registerPlugin(ScrollTrigger);
+
+let lumeOutdoortl = gsap.timeline({
+    scrollTrigger: {
+        trigger:lumeOutdoorBox,
+        end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
+        markers: true,
+        toggleActions:"play pause reverse reset",
+        scrub: 1,
+        pin: lumeOutdoorBox
+    }
+});
+
+lumeOutdoortl.to(lumeOutdoorImage, {
+    backgroundColor: "#fff",
+    duration: 1.5,
+    backgroundPosition: "left 20% top 50%"
+})
+.to(lumeOutdoorTitle, {
+    opacity: "0"
+    //left: "10%"
+}, 0)
+.to(lumeOutdoorText1, {
+    display: "flex",
+    opacity: "1",
+    duration: 2,
+    transform: "translateY(0vh)"
+}, 0)
+.to(lumeOutdoorText1, {
+    transform: "translateY(-50vh)",
+    display: "none",
+    opacity: "0",
+    duration: 2
+}, 3)
+// .to(lumeOutdoorVideo, {
+//     setInterval(({
+//         lumeOutdoorVideo.currentTime = 
+//     }),33.3);
+// })
+.to(lumeOutdoorText2, {
+    display: "flex",
+    opacity: "1",
+    duration: 2,
+    transform: "translateY(0vh)"
+})
+.to(lumeOutdoorText2, {
+    duration: 1
+});
