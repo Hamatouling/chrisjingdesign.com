@@ -9,6 +9,11 @@ const lumeOutdoorText1 = document.getElementById('lume-outdoor-text-1');
 const lumeOutdoorText2 = document.getElementById('lume-outdoor-text-2');
 const lumeOutdoorVideo = document.getElementById('lume-outdoor-video');
 
+const lumeHomeBox = document.getElementById('lume-home-box');
+const lumeHomeImage = document.getElementById('lume-home-img');
+const lumeHomeTitle = document.getElementById('lume-home-large-title');
+const lumeHomeText1 = document.getElementById('lume-home-text-1');
+const lumeHomeText2 = document.getElementById('lume-home-text-2');
 const controller = new ScrollMagic.Controller();
 
 //Title
@@ -136,5 +141,49 @@ lumeOutdoortl.to(lumeOutdoorImage, {
     transform: "translateY(0vh)"
 })
 .to(lumeOutdoorText2, {
+    duration: 1
+});
+
+//Lume Home ScrollTrigger
+
+let lumeHometl = gsap.timeline({
+    scrollTrigger: {
+        trigger:lumeHomeBox,
+        end:()=>"+="+(lumeHomeBox.offsetHeight*2),
+        markers: true,
+        toggleActions:"play pause reverse reset",
+        scrub: 1,
+        pin: lumeHomeBox
+    }
+});
+
+lumeHometl.to(lumeHomeImage, {
+    backgroundColor: "#fff",
+    duration: 1.5,
+    backgroundPosition: "left 20% top 50%"
+})
+.to(lumeHomeTitle, {
+    opacity: "0"
+    //left: "10%"
+}, 0)
+.to(lumeHomeText1, {
+    display: "flex",
+    opacity: "1",
+    duration: 2,
+    transform: "translateY(0vh)"
+}, 0)
+.to(lumeHomeText1, {
+    transform: "translateY(-50vh)",
+    display: "none",
+    opacity: "0",
+    duration: 2
+}, 3)
+.to(lumeHomeText2, {
+    display: "flex",
+    opacity: "1",
+    duration: 2,
+    transform: "translateY(0vh)"
+})
+.to(lumeHomeText2, {
     duration: 1
 });

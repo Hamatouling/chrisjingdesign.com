@@ -184,9 +184,11 @@ header {
     background-color: #fff;
 } */
 .lume-home-no-background {
-    background-image: url("./Media/lume-home-no-background.png");
+    background-image: url("./Media/lume-home-no-background-2.png");
+    background-size: 28%;
 }
-.lume-outdoor-text {
+.lume-outdoor-text,
+.lume-home-text {
     display: none;
     flex-direction: column;
     color: #000;
@@ -201,17 +203,20 @@ header {
     display: flex;
     transition: all 1s ease-in-out;
 }
-.lume-outdoor-text h4 {
+.lume-outdoor-text h4,
+.lume-home-text h4 {
     font-size: 25px;
 }
-.lume-outdoor-text h3 {
+.lume-outdoor-text h3,
+.lume-home-text h3 {
     font-size: 65px;
     font-weight: 600;
     line-height: 1.04;
     letter-spacing: -0.015em;
     margin-top: 10px;
 }
-.lume-outdoor-text p {
+.lume-outdoor-text p,
+.lume-home-text p {
     font-size: 22px;
     margin-top: 20px;
     color: #86868b;
