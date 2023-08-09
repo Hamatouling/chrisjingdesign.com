@@ -384,6 +384,77 @@ header {
     background-size: cover;
 }
 
+/* Lume Process */
+.lume-process-box {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.lume-process-img-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.lume-process-img-first-row,
+.lume-process-img-second-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.lume-process-img {
+    width: 465px;
+    height: 465px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+.lume-process-img-1 {
+    background-image: url("./Media/lume-process-1.JPG");
+}
+.lume-process-img-2 {
+    background-image: url("./Media/lume-process-2.JPG");
+}
+.lume-process-img-3 {
+    background-image: url("./Media/lume-process-3.JPG");
+}
+.lume-process-img-4 {
+    background-image: url("./Media/lume-process-4.jpg");
+}
+.lume-process-text-box {
+    display: flex;
+    margin-top: 80px;
+    gap: 80px;
+}
+.lume-process-text-left {
+    height: 100%;
+    flex: 1;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
+}
+.lume-process-text-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.142857;
+}
+.lume-process-text-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    gap: 50px;
+}
+.lume-process-text-paragraph {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    border-top: 1px solid #424245;
+    padding-top: 20px;
+}
+
+
 /* Responsive Design */
 @media only screen and (min-width: 1441px) {
     .project-menu {
