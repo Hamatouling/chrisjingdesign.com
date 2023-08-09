@@ -330,6 +330,59 @@ header {
     padding-top: 20px;
 }
 
+/* Lume Sketches */
+.lume-sketch-box {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.lume-sketch-section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.lume-sketch-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 430px;
+    gap: 80px;
+}
+.lume-sketch-img {
+    height: 100%;
+    flex: 1.5;
+    border-radius: 18px;
+}
+.lume-sketch-paragraph {
+    flex: 1;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    border-left: 1px solid #424245;
+    padding-left: 20px;
+    align-self: flex-end;
+}
+.lume-sketch-1 {
+    background-image: url(./Media/lume-sketch-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lume-sketch-2 {
+    background-image: url(./Media/lume-sketch-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lume-sketch-3 {
+    background-image: url(./Media/lume-sketch-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Responsive Design */
 @media only screen and (min-width: 1441px) {
