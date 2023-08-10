@@ -14,6 +14,32 @@ const lumeHomeImage = document.getElementById('lume-home-img');
 const lumeHomeTitle = document.getElementById('lume-home-large-title');
 const lumeHomeText1 = document.getElementById('lume-home-text-1');
 const lumeHomeText2 = document.getElementById('lume-home-text-2');
+
+const lumeBriefBox = document.getElementById('lume-brief-box');
+const lumeBriefTextLeft = document.getElementById('lume-brief-text-left');
+const lumeBriefParagraph1 = document.getElementById('lume-brief-paragraph-1');
+const lumeBriefParagraph2 = document.getElementById('lume-brief-paragraph-2');
+
+const lumeOppBox = document.getElementById('lume-opp-box');
+const lumeOppTextLeft = document.getElementById('lume-opp-text-left');
+const lumeOppParagraph1 = document.getElementById('lume-opp-paragraph-1');
+const lumeOppParagraph2 = document.getElementById('lume-opp-paragraph-2');
+const lumeOppParagraph3 = document.getElementById('lume-opp-paragraph-3');
+
+const lumeSketchBox = document.getElementById('lume-sketch-box');
+const lumeSketchParagraph1 = document.getElementById('lume-sketch-paragraph-1');
+const lumeSketchParagraph2 = document.getElementById('lume-sketch-paragraph-2');
+const lumeSketchParagraph3 = document.getElementById('lume-sketch-paragraph-3');
+const lumeSketchImg1 = document.getElementById('lume-sketch-1');
+const lumeSketchImg2 = document.getElementById('lume-sketch-2');
+const lumeSketchImg3 = document.getElementById('lume-sketch-3');
+
+const lumeProcessBox = document.getElementById('lume-process-box');
+const lumeProcessImg1 = document.getElementById('lume-process-img-1');
+const lumeProcessImg2 = document.getElementById('lume-process-img-2');
+const lumeProcessImg3 = document.getElementById('lume-process-img-3');
+const lumeProcessImg4 = document.getElementById('lume-process-img-4');
+
 const controller = new ScrollMagic.Controller();
 
 //Title
@@ -22,7 +48,7 @@ const sceneHero = new ScrollMagic.Scene({
     duration: "100%",
     triggerHook: 0
 })
-    .addIndicators()
+    //.addIndicators()
     .setPin(heroBox)
     .addTo(controller);
 
@@ -47,7 +73,7 @@ const sceneTitle = new ScrollMagic.Scene({
     duration: "100%",
     triggerHook: 0
 })
-    .addIndicators()
+    //.addIndicators()
     .setPin(titleBox)
     .addTo(controller);
 
@@ -100,8 +126,8 @@ gsap.registerPlugin(ScrollTrigger);
 let lumeOutdoortl = gsap.timeline({
     scrollTrigger: {
         trigger:lumeOutdoorBox,
-        end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
-        markers: true,
+        // end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
+        // markers: true,
         toggleActions:"play pause reverse reset",
         scrub: 1,
         pin: lumeOutdoorBox
@@ -193,3 +219,132 @@ lumeHometl.to(lumeHomeImage, {
 .to(lumeHomeText2, {
     duration: 1
 });
+
+
+
+let lumeBrieftl = gsap.timeline({
+    scrollTrigger: {
+        trigger:lumeBriefBox,
+        start: "top top",
+        end:"+=350",
+        markers:true,
+        toggleActions:"play pause reverse reset",
+        scrub: true,
+        // pin: true
+    }
+});
+
+lumeBrieftl.to(lumeBriefTextLeft, {
+    opacity: "1"
+})
+.to(lumeBriefTextLeft, {
+    transform: "translateY(0)"
+}, 0)
+.to(lumeBriefParagraph1, {
+    opacity: "1",
+    transform: "translateY(0)"
+}, 0)
+.to(lumeBriefParagraph2, {
+    opacity: "1",
+    transform: "translateY(0)"
+});
+
+
+
+let lumeOpptl = gsap.timeline({
+    scrollTrigger: {
+        trigger:lumeOppBox,
+        start: "top top",
+        end:"+=350",
+        markers:true,
+        toggleActions:"play pause reverse reset",
+        scrub: true
+        // pin: true
+    }
+});
+
+lumeOpptl.to(lumeOppTextLeft, {
+    opacity: "1",
+    duration: 0.5
+})
+.to(lumeOppTextLeft, {
+    transform: "translateY(0)"
+}, 0)
+.to(lumeOppParagraph1, {
+    opacity: "1",
+    transform: "translateY(0)"
+}, 0)
+.to(lumeOppParagraph2, {
+    opacity: "1",
+    transform: "translateY(0)"
+})
+.to(lumeOppParagraph3, {
+    opacity: "1",
+    transform: "translateY(0)"
+});
+
+
+
+let lumeSketchtl = gsap.timeline({
+    scrollTrigger: {
+        trigger: lumeSketchBox,
+        start: "top top",
+        end: "bottom top",
+        markers: true,
+        toggleActions:"play pause reverse reset",
+        scrub: true
+    }
+});
+lumeSketchtl.to(lumeSketchParagraph1, {
+    transform: "translateY(-120px)"
+})
+.to(lumeSketchParagraph2, {
+    transform: "translateY(-120px)"
+}, 0)
+.to(lumeSketchParagraph3, {
+    transform: "translateY(-120px)"
+}, 0)
+.to(lumeSketchImg1, {
+    transform: "scale(1.2)"
+}, 0)
+.to(lumeSketchImg2, {
+    transform: "scale(1.2)"
+}, 0)
+.to(lumeSketchImg3, {
+    transform: "scale(1.2)"
+}, 0);
+
+
+let lumeProcess1tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: lumeProcessImg1,
+        start: "top bottom",
+        end: "+=400",
+        markers: true,
+        toggleActions:"play pause reverse reset",
+        scrub: true
+    }
+});
+lumeProcess1tl.to(lumeProcessImg1, {
+    opacity: "1"
+})
+.to(lumeProcessImg2, {
+    opacity: "1"
+}, 0);
+
+let lumeProcess2tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: lumeProcessImg3,
+        start: "top bottom",
+        end: "+=400",
+        markers: true,
+        toggleActions:"play pause reverse reset",
+        scrub: true
+    }
+});
+lumeProcess2tl.to(lumeProcessImg3, {
+    opacity: "1"
+})
+.to(lumeProcessImg4, {
+    opacity: "1"
+}, 0);
