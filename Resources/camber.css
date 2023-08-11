@@ -164,7 +164,7 @@ header {
     background-color: #fff;
     margin: auto 0;
     padding-right: 30px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 h2 {
     font-weight: 600;
