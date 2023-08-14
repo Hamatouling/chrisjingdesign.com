@@ -10,8 +10,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-body {
+body, html {
     background-color: #eee;
+    scroll-snap-type: proximity;
+    scroll-snap-type: y proximity;
+    scroll-snap-stop: always;
 }
 
 /* Menu */
@@ -870,6 +873,13 @@ header {
     gap: 50px;
     color: #666;
 }
+.site-walk-through {
+    overflow-y: auto;
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
 .full-screen {
     height: 100vh;
     width: 100vw;
@@ -879,10 +889,12 @@ header {
     padding-bottom: 5vh;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 .site-walk-text-box {
     flex: 1;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
 }
 .site-walk-title {
     font-size: 30px;
@@ -890,37 +902,65 @@ header {
 }
 .site-entrance-img {
     background-image: url(./Media/site-entrance.png);
-    flex: 6;
+    flex: 10;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
     border-radius: 18px;
 }
 .site-enter-img {
     background-image: url(./Media/site-entering.png);
-    flex: 6;
+    flex: 10;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
     border-radius: 18px;
 }
 .site-bar-img {
     background-image: url(./Media/site-bar.png);
-    flex: 6;
+    flex: 10;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
     border-radius: 18px;
 }
 .site-first-floor-back-img {
     background-image: url(./Media/site-first-floor-back.png);
-    flex: 6;
+    flex: 10;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
     border-radius: 18px;
 }
 .site-stair-img {
     background-image: url(./Media/site-stair.png);
-    flex: 6;
+    flex: 10;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
+    border-radius: 18px;
+}
+.site-second-floor-plant-img {
+    background-image: url(./Media/site-frosted-stair.png);
+    flex: 10;
+    width: 90%;
+    max-width: 1800px;
+    border-radius: 18px;
+}
+.site-second-floor-indoor-img {
+    background-image: url(./Media/site-second-indoor.png);
+    flex: 10;
+    width: 90%;
+    max-width: 1800px;
+    border-radius: 18px;
+}
+.site-second-floor-patio-img {
+    background-image: url(./Media/site-second-patio.png);
+    flex: 10;
+    width: 90%;
+    max-width: 1800px;
+    border-radius: 18px;
+}
+.site-second-floor-patio-seating-img {
+    background-image: url(./Media/site-second-patio-seating.png);
+    flex: 10;
+    width: 90%;
+    max-width: 1800px;
     border-radius: 18px;
 }
 
