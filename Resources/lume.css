@@ -823,7 +823,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./Media/Image12_002.png);
+    background-image: url(./Media/site-transition.png);
     background-size: cover;
 }
 .design-text {
@@ -841,7 +841,7 @@ header {
     width: 100%;
 }
 .spacial-design-img {
-    background-image: url("./Media/Image2_001.png");
+    background-image: url(./Media/site-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
