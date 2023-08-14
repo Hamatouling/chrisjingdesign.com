@@ -6,6 +6,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body {
     background-color: #eee;
@@ -867,108 +870,59 @@ header {
     gap: 50px;
     color: #666;
 }
-
-.not-sure {
+.full-screen {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 80%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     justify-content: center;
-    /* align-items: center; */
-    margin: 0 auto;
+    align-items: center;
 }
-.not-sure-img-1 {
-    background-image: url(./Media/Image1_002.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
+.site-walk-text-box {
+    flex: 1;
+    padding: 20px 0;
+}
+.site-walk-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.site-entrance-img {
+    background-image: url(./Media/site-entrance.png);
+    flex: 6;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 18px;
 }
-.not-sure-img-2 {
-    background-image: url(./Media/Image2_001.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
+.site-enter-img {
+    background-image: url(./Media/site-entering.png);
+    flex: 6;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 18px;
 }
-.not-sure-img-3 {
-    background-image: url(./Media/Image3_001.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
+.site-bar-img {
+    background-image: url(./Media/site-bar.png);
+    flex: 6;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 18px;
 }
-.not-sure-img-4 {
-    background-image: url(./Media/Image4_001.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
+.site-first-floor-back-img {
+    background-image: url(./Media/site-first-floor-back.png);
+    flex: 6;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 18px;
 }
-.not-sure-img-5 {
-    background-image: url(./Media/Image5_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
+.site-stair-img {
+    background-image: url(./Media/site-stair.png);
+    flex: 6;
+    width: 90%;
+    max-width: 1200px;
     border-radius: 18px;
 }
-.not-sure-img-6 {
-    background-image: url(./Media/Image6_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-7 {
-    background-image: url(./Media/Image7_001.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-8 {
-    background-image: url(./Media/Image8_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-9 {
-    background-image: url(./Media/Image9_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-10 {
-    background-image: url(./Media/Image10_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-11 {
-    background-image: url(./Media/Image11_000.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-12 {
-    background-image: url(./Media/Image12_001.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-.not-sure-img-13 {
-    background-image: url(./Media/Image12_002.png);
-    background-size: cover;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-}
-
 
 
 
