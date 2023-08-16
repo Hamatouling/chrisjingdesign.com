@@ -184,7 +184,7 @@ if(mediaQuery.matches){
         scrollTrigger: {
             trigger:lumeHomeBox,
             end:()=>"+="+(lumeHomeBox.offsetHeight*2),
-            markers: true,
+            //markers: true,
             toggleActions:"play pause reverse reset",
             scrub: 1,
             pin: lumeHomeBox
@@ -281,7 +281,7 @@ if(mediaQuery.matches){
         scrollTrigger: {
             trigger:lumeHomeBox,
             end:()=>"+="+(lumeHomeBox.offsetHeight*2),
-            markers: true,
+            //markers: true,
             toggleActions:"play pause reverse reset",
             scrub: 1,
             pin: lumeHomeBox
@@ -332,7 +332,7 @@ let lumeBrieftl = gsap.timeline({
         trigger:lumeBriefBox,
         start: "top top",
         end:"+=350",
-        markers:true,
+        //markers:true,
         toggleActions:"play pause reverse reset",
         scrub: true,
         // pin: true
@@ -364,7 +364,7 @@ let lumeOpptl = gsap.timeline({
         trigger:lumeOppBox,
         start: "top top",
         end:"+=350",
-        markers:true,
+        //markers:true,
         toggleActions:"play pause reverse reset",
         scrub: true
         // pin: true
@@ -398,7 +398,7 @@ let lumeSketchtl = gsap.timeline({
         trigger: lumeSketchBox,
         start: "top top",
         end: "bottom top",
-        markers: true,
+        //markers: true,
         toggleActions:"play pause reverse reset",
         scrub: true
     }
@@ -449,7 +449,7 @@ let lumeProcess1tl = gsap.timeline({
         trigger: lumeProcessImg1,
         start: "top bottom",
         end: "+=400",
-        markers: true,
+        //markers: true,
         toggleActions:"play pause reverse reset",
         scrub: true
     }
@@ -466,7 +466,7 @@ let lumeProcess2tl = gsap.timeline({
         trigger: lumeProcessImg3,
         start: "top bottom",
         end: "+=400",
-        markers: true,
+        //markers: true,
         toggleActions:"play pause reverse reset",
         scrub: true
     }
