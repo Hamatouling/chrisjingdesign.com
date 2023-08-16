@@ -12,7 +12,6 @@
 }
 body, html {
     background-color: #eee;
-    scroll-snap-type: proximity;
     scroll-snap-type: y proximity;
     scroll-snap-stop: always;
 }
@@ -123,8 +122,6 @@ header {
 #hero-text {
     background-color: transparent;
     font-weight: 600;
-    width: 450px;
-    height: 200px;
     background-image: url("./Media/lume\ title.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,14 +138,13 @@ header {
 .lume-intro-text {
     width: 80vw;
     max-width: 980px;
-    font-size: 30px;
     font-weight: 500;
     color: #ccc;
     text-align: center;
     background-color: transparent;
 }
 #title-text {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     background-color: transparent;
 }
@@ -179,11 +175,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-.lume-outdoor-no-background video {
+/* .lume-outdoor-no-background video {
     height: 100px;
     position: absolute;
     left: 30px;
-}
+} */
 .lume-outdoor-no-background {
     background-image: url("./Media/lume-outdoor-no-background-2.png");
     background-size: contain;
@@ -206,11 +202,9 @@ header {
     flex-direction: column;
     color: #000;
     max-width: 500px;
-    margin-left: 50px;
     background-color: transparent;
     opacity: 0;
     transform: translateY(100vh);
-    margin-left: 35vw;
 }
 .lume-outdoor-text-animation {
     display: flex;
@@ -536,6 +530,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 .one-more-thing-text {
     font-size: 60px;
@@ -552,6 +547,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    scroll-snap-align: start;
 }
 .spacial-intro-text {
     font-size: 50px;
@@ -569,6 +565,7 @@ header {
     margin: 0 auto;
     gap: 120px;
     align-items: center;
+    scroll-snap-align: start;
 }
 .culture-food-img-box {
     flex: 1;
@@ -609,6 +606,7 @@ header {
     margin: 0 auto;
     gap: 120px;
     align-items: center;
+    scroll-snap-align: start;
 }
 .brand-img-box {
     flex: 1;
@@ -686,6 +684,7 @@ header {
     align-items: center;
     background-image: url(./Media/oasis-transition.jpg);
     background-size: cover;
+    scroll-snap-align: start;
 }
 .spacial-opp-text {
     font-size: 80px;
@@ -702,6 +701,7 @@ header {
     margin: 0 auto;
     gap: 120px;
     align-items: center;
+    scroll-snap-align: start;
 }
 .spacial-opp-img-box {
     flex: 1;
@@ -727,6 +727,7 @@ header {
     align-items: center;
     background-image: url(./Media/frosted-img.jpg);
     background-size: cover;
+    scroll-snap-align: start;
 }
 .frosted-text {
     font-size: 80px;
@@ -740,6 +741,7 @@ header {
     margin: 0 auto;
     gap: 120px;
     align-items: center;
+    scroll-snap-align: start;
 }
 .frosted-img-box {
     width: 100%;
@@ -761,6 +763,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    flex: 1;
 }
 .frosted-img-2 {
     background-image: url(./Media/frosted-2.jpg);
@@ -768,6 +771,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    flex: 1.5;
 }
 .frosted-img-3 {
     background-image: url(./Media/frosted-3.jpg);
@@ -775,6 +779,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    flex: 1.2;
 }
 .frosted-img-4 {
     background-image: url(./Media/frosted-4.jpg);
@@ -782,6 +787,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    flex: 0.8;
 }
 
 .touch-transition-box {
@@ -793,6 +799,7 @@ header {
     align-items: center;
     background-image: url(./Media/touch-img.jpg);
     background-size: cover;
+    scroll-snap-align: start;
 }
 .touch-text {
     font-size: 80px;
@@ -806,6 +813,7 @@ header {
     margin: 0 auto;
     gap: 120px;
     align-items: center;
+    scroll-snap-align: start;
 }
 .touch-img-box {
     flex: 1;
@@ -831,6 +839,7 @@ header {
     align-items: center;
     background-image: url(./Media/site-transition.png);
     background-size: cover;
+    scroll-snap-align: start;
 }
 .design-text {
     font-size: 80px;
@@ -872,6 +881,10 @@ header {
     flex: 1.5;
     gap: 50px;
     color: #666;
+}
+.stop-scrolling {
+    height: 100vh;
+    overflow: hidden;
 }
 .site-walk-through {
     overflow-y: auto;
@@ -980,10 +993,12 @@ header {
 }
 .lume-sum-box {
     max-width: 980px;
+    height: 100vh;
     margin: 0 auto;
-    /* margin-top: 120px; */
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
 }
 .lume-sum-box .lume-section-title {
     color: #fff;
@@ -1103,11 +1118,31 @@ header {
     .project-menu {
         width: 980px;
     }
+    #hero-text{
+        width: 450px;
+        height: 200px;
+    }
+    .lume-outdoor-text,
+    .lume-home-text {
+        margin-left: 35vw;
+    }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 1069px) {
     .project-menu {
         width: 980px;
+    }
+    #hero-text{
+        width: 450px;
+        height: 200px;
+    }
+    .lume-intro-text,
+    #title-text {
+        font-size: 60px;
+    }
+    .lume-outdoor-text,
+    .lume-home-text {
+        margin-left: 35vw;
     }
 }
 
@@ -1115,11 +1150,45 @@ header {
     .project-menu {
         width: 670px;
     }
+    #hero-text{
+        width: 350px;
+        height: 100px;
+    }
+    .lume-intro-text,
+    #title-text {
+        font-size: 60px;
+    }
+    .lume-outdoor-text,
+    .lume-home-text {
+        margin-left: 35vw;
+    }
 }
 
 @media only screen and (max-width: 734px) and (min-width: 416px) {
     .project-menu {
         width: 85%;
+    }
+    #hero-text{
+        width: 350px;
+        height: 100px;
+    }
+    .lume-intro-text,
+    #title-text {
+        font-size: 40px;
+    }
+    .lume-outdoor-text,
+    .lume-home-text {
+        max-width: 50vw;
+        margin-left: 30vw;
+    }
+    .lume-outdoor-text h4{
+        font-size: 15px;
+    }
+    .lume-outdoor-text h3{
+        font-size: 40px;
+    }
+    .lume-outdoor-text p{
+        font-size: 17px;
     }
 }
 

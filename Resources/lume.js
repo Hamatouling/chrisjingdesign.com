@@ -42,6 +42,9 @@ const lumeProcessImg4 = document.getElementById('lume-process-img-4');
 
 const controller = new ScrollMagic.Controller();
 
+const mediaQuery = window.matchMedia('(min-width: 735px)');
+
+
 //Title
 const sceneHero = new ScrollMagic.Scene({
     triggerElement: heroBox,
@@ -123,102 +126,203 @@ addEventListener('scroll',()=>{
 
 gsap.registerPlugin(ScrollTrigger);
 
-let lumeOutdoortl = gsap.timeline({
-    scrollTrigger: {
-        trigger:lumeOutdoorBox,
-        // end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
-        // markers: true,
-        toggleActions:"play pause reverse reset",
-        scrub: 1,
-        pin: lumeOutdoorBox
-    }
-});
+if(mediaQuery.matches){
+    let lumeOutdoortl = gsap.timeline({
+        scrollTrigger: {
+            trigger:lumeOutdoorBox,
+            // end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
+            // markers: true,
+            toggleActions:"play pause reverse reset",
+            scrub: 1,
+            pin: lumeOutdoorBox
+        }
+    });
+    
+    lumeOutdoortl.to(lumeOutdoorImage, {
+        //backgroundColor: "#eee",
+        duration: 1.5,
+        backgroundPosition: "left 20% top 50%"
+    })
+    .to(lumeOutdoorTitle, {
+        opacity: "0"
+        //left: "10%"
+    }, 0)
+    .to(lumeOutdoorBox, {
+        backgroundColor: "#eee"
+    }, 0)
+    .to(lumeOutdoorText1, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    }, 0)
+    .to(lumeOutdoorText1, {
+        transform: "translateY(-50vh)",
+        display: "none",
+        opacity: "0",
+        duration: 2
+    }, 3)
+    // .to(lumeOutdoorVideo, {
+    //     setInterval(({
+    //         lumeOutdoorVideo.currentTime = 
+    //     }),33.3);
+    // })
+    .to(lumeOutdoorText2, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    })
+    .to(lumeOutdoorText2, {
+        duration: 1
+    });
+    
+    //Lume Home ScrollTrigger
+    
+    let lumeHometl = gsap.timeline({
+        scrollTrigger: {
+            trigger:lumeHomeBox,
+            end:()=>"+="+(lumeHomeBox.offsetHeight*2),
+            markers: true,
+            toggleActions:"play pause reverse reset",
+            scrub: 1,
+            pin: lumeHomeBox
+        }
+    });
+    
+    lumeHometl.to(lumeHomeImage, {
+        //backgroundColor: "#eee",
+        duration: 1.5,
+        backgroundPosition: "left 20% top 50%"
+    })
+    .to(lumeHomeTitle, {
+        opacity: "0"
+        //left: "10%"
+    }, 0)
+    .to(lumeHomeBox, {
+        backgroundColor: "#eee"
+    }, 0)
+    .to(lumeHomeText1, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    }, 0)
+    .to(lumeHomeText1, {
+        transform: "translateY(-50vh)",
+        display: "none",
+        opacity: "0",
+        duration: 2
+    }, 3)
+    .to(lumeHomeText2, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    })
+    .to(lumeHomeText2, {
+        duration: 1
+    });
+} else {
+    let lumeOutdoortl = gsap.timeline({
+        scrollTrigger: {
+            trigger:lumeOutdoorBox,
+            // end:()=>"+="+(lumeOutdoorBox.offsetHeight*2),
+            // markers: true,
+            toggleActions:"play pause reverse reset",
+            scrub: 1,
+            pin: lumeOutdoorBox
+        }
+    });
+    
+    lumeOutdoortl.to(lumeOutdoorImage, {
+        //backgroundColor: "#eee",
+        duration: 1.5,
+        backgroundPosition: "left -50% top 50%",
+    })
+    .to(lumeOutdoorTitle, {
+        opacity: "0"
+        //left: "10%"
+    }, 0)
+    .to(lumeOutdoorBox, {
+        backgroundColor: "#eee"
+    }, 0)
+    .to(lumeOutdoorText1, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    }, 0)
+    .to(lumeOutdoorText1, {
+        transform: "translateY(-50vh)",
+        display: "none",
+        opacity: "0",
+        duration: 2
+    }, 3)
+    // .to(lumeOutdoorVideo, {
+    //     setInterval(({
+    //         lumeOutdoorVideo.currentTime = 
+    //     }),33.3);
+    // })
+    .to(lumeOutdoorText2, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    })
+    .to(lumeOutdoorText2, {
+        duration: 1
+    });
+    
+    //Lume Home ScrollTrigger
+    
+    let lumeHometl = gsap.timeline({
+        scrollTrigger: {
+            trigger:lumeHomeBox,
+            end:()=>"+="+(lumeHomeBox.offsetHeight*2),
+            markers: true,
+            toggleActions:"play pause reverse reset",
+            scrub: 1,
+            pin: lumeHomeBox
+        }
+    });
+    
+    lumeHometl.to(lumeHomeImage, {
+        //backgroundColor: "#eee",
+        duration: 1.5,
+        backgroundPosition: "left 20% top 50%"
+    })
+    .to(lumeHomeTitle, {
+        opacity: "0"
+        //left: "10%"
+    }, 0)
+    .to(lumeHomeBox, {
+        backgroundColor: "#eee"
+    }, 0)
+    .to(lumeHomeText1, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    }, 0)
+    .to(lumeHomeText1, {
+        transform: "translateY(-50vh)",
+        display: "none",
+        opacity: "0",
+        duration: 2
+    }, 3)
+    .to(lumeHomeText2, {
+        display: "flex",
+        opacity: "1",
+        duration: 2,
+        transform: "translateY(0vh)"
+    })
+    .to(lumeHomeText2, {
+        duration: 1
+    });
+}
 
-lumeOutdoortl.to(lumeOutdoorImage, {
-    //backgroundColor: "#eee",
-    duration: 1.5,
-    backgroundPosition: "left 20% top 50%"
-})
-.to(lumeOutdoorTitle, {
-    opacity: "0"
-    //left: "10%"
-}, 0)
-.to(lumeOutdoorBox, {
-    backgroundColor: "#eee"
-}, 0)
-.to(lumeOutdoorText1, {
-    display: "flex",
-    opacity: "1",
-    duration: 2,
-    transform: "translateY(0vh)"
-}, 0)
-.to(lumeOutdoorText1, {
-    transform: "translateY(-50vh)",
-    display: "none",
-    opacity: "0",
-    duration: 2
-}, 3)
-// .to(lumeOutdoorVideo, {
-//     setInterval(({
-//         lumeOutdoorVideo.currentTime = 
-//     }),33.3);
-// })
-.to(lumeOutdoorText2, {
-    display: "flex",
-    opacity: "1",
-    duration: 2,
-    transform: "translateY(0vh)"
-})
-.to(lumeOutdoorText2, {
-    duration: 1
-});
 
-//Lume Home ScrollTrigger
-
-let lumeHometl = gsap.timeline({
-    scrollTrigger: {
-        trigger:lumeHomeBox,
-        end:()=>"+="+(lumeHomeBox.offsetHeight*2),
-        markers: true,
-        toggleActions:"play pause reverse reset",
-        scrub: 1,
-        pin: lumeHomeBox
-    }
-});
-
-lumeHometl.to(lumeHomeImage, {
-    //backgroundColor: "#eee",
-    duration: 1.5,
-    backgroundPosition: "left 20% top 50%"
-})
-.to(lumeHomeTitle, {
-    opacity: "0"
-    //left: "10%"
-}, 0)
-.to(lumeHomeBox, {
-    backgroundColor: "#eee"
-}, 0)
-.to(lumeHomeText1, {
-    display: "flex",
-    opacity: "1",
-    duration: 2,
-    transform: "translateY(0vh)"
-}, 0)
-.to(lumeHomeText1, {
-    transform: "translateY(-50vh)",
-    display: "none",
-    opacity: "0",
-    duration: 2
-}, 3)
-.to(lumeHomeText2, {
-    display: "flex",
-    opacity: "1",
-    duration: 2,
-    transform: "translateY(0vh)"
-})
-.to(lumeHomeText2, {
-    duration: 1
-});
 
 
 
@@ -248,6 +352,9 @@ lumeBrieftl.to(lumeBriefTextLeft, {
     opacity: "1",
     transform: "translateY(0)"
 });
+
+
+
 
 
 
@@ -348,3 +455,19 @@ lumeProcess2tl.to(lumeProcessImg3, {
 .to(lumeProcessImg4, {
     opacity: "1"
 }, 0);
+
+
+// const siteWalkThrough = document.getElementById('site-walk-through');
+// console.log(siteWalkThrough.offsetTop);
+function update(){
+    const siteWalkThrough = document.getElementById('site-walk-through');
+    const res = siteWalkThrough.getBoundingClientRect();
+    console.log(res);
+    if(res.top > 0){
+        siteWalkThrough.style.overflowY = "hidden";
+    } else {
+        siteWalkThrough.style.overflowY = "auto";
+    }
+}
+document.addEventListener("scroll", update);
+update();
