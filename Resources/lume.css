@@ -1156,7 +1156,7 @@ header {
     }
     .lume-intro-text,
     #title-text {
-        font-size: 60px;
+        font-size: 50px;
     }
     .lume-outdoor-text,
     .lume-home-text {
@@ -1181,20 +1181,211 @@ header {
         max-width: 50vw;
         margin-left: 30vw;
     }
-    .lume-outdoor-text h4{
+    .lume-outdoor-text h4,
+    .lume-home-text h4{
         font-size: 15px;
     }
-    .lume-outdoor-text h3{
+    .lume-outdoor-text h3,
+    .lume-home-text h3{
         font-size: 40px;
     }
-    .lume-outdoor-text p{
+    .lume-outdoor-text p,
+    .lume-home-text p{
         font-size: 17px;
     }
+    .lume-brief-box,
+    .lume-opp-box,
+    .lume-sketch-box,
+    .lume-process-box,
+    .lume-charge-box,
+    .spacial-intro-text{
+        max-width: 410px;
+    }
+    .lume-brief-title,
+    .lume-opp-title,
+    .lume-process-text-title,
+    .lume-charge-text-title,
+    .spacial-title-smaller {
+        font-size: 25px;
+    }
+    .lume-brief-paragraph,
+    .lume-opp-paragraph,
+    .lume-process-text-paragraph,
+    .lume-charge-text-paragraph,
+    .spacial-paragraph-1 {
+        font-size: 17px;
+    }
+    .lume-sketch-group {
+        flex-direction: column;
+        height: 500px;
+    }
+    .lume-sketch-img-box{
+        flex: 3;
+    }
+    .lume-process-img-first-row,
+    .lume-process-img-second-row {
+        flex-direction: column;
+    }
+    .lume-process-img {
+        width: 410px;
+        height: 410px;
+    }
+    .lume-charge-img {
+        height: 300px;
+    }
+    .culture-food-box,
+    .brand-box,
+    .spacial-opp-box,
+    .frosted-box,
+    .touch-box {
+        flex-direction: column;
+        padding-top: 80px;
+        gap: 50px;
+    }
+    .culture-food-img-box,
+    .brand-img-box,
+    .spacial-opp-img-box,
+    .frosted-img-box,
+    .touch-img-box {
+        height: auto;
+        width: 100%;
+        flex: 1.5;
+    }
+    .culture-food-text-box {
+        flex: 1;
+    }
+    .brand-text-box {
+        flex: 1.8;
+    }
+    .frosted-text-box {
+        flex: 1;
+    }
+    .spacial-subtitle {
+        font-size: 18px;
+    }
+    .spacial-title {
+        font-size: 45px;
+    }
+    .spacial-paragraph {
+        font-size: 18px;
+    }
+    .audience-box {
+        width: 80vw;
+    }
+    .audience-text-box {
+        flex-direction: column;
+    }
 }
-
 @media only screen and (max-width: 415px) {
     .project-menu {
         width: 85%;
+    }
+    #hero-text{
+        width: 85vw;
+        height: 25vw;
+    }
+    .lume-intro-text,
+    #title-text {
+        font-size: 9.6vw;
+    }
+    .lume-outdoor-text,
+    .lume-home-text {
+        max-width: 50vw;
+        margin-left: 30vw;
+    }
+    .lume-outdoor-text h4,
+    .lume-home-text h4{
+        font-size: 3.6vw;
+    }
+    .lume-outdoor-text h3,
+    .lume-home-text h3{
+        font-size: 9.6vw;
+    }
+    .lume-outdoor-text p,
+    .lume-home-text p{
+        font-size: 4.1vw;
+    }
+    .lume-brief-box,
+    .lume-opp-box,
+    .lume-sketch-box,
+    .lume-process-box,
+    .lume-charge-box,
+    .spacial-intro-text{
+        max-width: 97vw;
+    }
+    .lume-brief-title,
+    .lume-opp-title,
+    .lume-process-text-title,
+    .lume-charge-text-title,
+    .spacial-title-smaller {
+        font-size: 6vw;
+    }
+    .lume-brief-paragraph,
+    .lume-opp-paragraph,
+    .lume-process-text-paragraph,
+    .lume-charge-text-paragraph,
+    .spacial-paragraph-1 {
+        font-size: 4.1vw;
+    }
+    .lume-sketch-group {
+        flex-direction: column;
+        height: 120vw;
+    }
+    .lume-sketch-img-box{
+        flex: 3;
+    }
+    .lume-process-img-first-row,
+    .lume-process-img-second-row {
+        flex-direction: column;
+    }
+    .lume-process-img {
+        width: 97vw;
+        height: 97vw;
+    }
+    .lume-charge-img {
+        height: 72vw;
+    }
+    .culture-food-box,
+    .brand-box,
+    .spacial-opp-box,
+    .frosted-box,
+    .touch-box {
+        flex-direction: column;
+        padding-top: 19.2vw;
+        gap: 12vw;
+    }
+    .culture-food-img-box,
+    .brand-img-box,
+    .spacial-opp-img-box,
+    .frosted-img-box,
+    .touch-img-box {
+        height: auto;
+        width: 100%;
+        flex: 1.5;
+    }
+    .culture-food-text-box {
+        flex: 1;
+    }
+    .brand-text-box {
+        flex: 1.8;
+    }
+    .frosted-text-box {
+        flex: 1;
+    }
+    .spacial-subtitle {
+        font-size: 4.3vw;
+    }
+    .spacial-title {
+        font-size: 10.8vw;
+    }
+    .spacial-paragraph {
+        font-size: 4.3vw;
+    }
+    .audience-box {
+        width: 80vw;
+    }
+    .audience-text-box {
+        flex-direction: column;
     }
 }
 

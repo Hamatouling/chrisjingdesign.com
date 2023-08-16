@@ -17,6 +17,7 @@ const lumeHomeText2 = document.getElementById('lume-home-text-2');
 
 const lumeBriefBox = document.getElementById('lume-brief-box');
 const lumeBriefTextLeft = document.getElementById('lume-brief-text-left');
+const lumeBriefTextRight = document.getElementById('lume-brief-text-right');
 const lumeBriefParagraph1 = document.getElementById('lume-brief-paragraph-1');
 const lumeBriefParagraph2 = document.getElementById('lume-brief-paragraph-2');
 
@@ -290,7 +291,7 @@ if(mediaQuery.matches){
     lumeHometl.to(lumeHomeImage, {
         //backgroundColor: "#eee",
         duration: 1.5,
-        backgroundPosition: "left 20% top 50%"
+        backgroundPosition: "left -50% top 50%"
     })
     .to(lumeHomeTitle, {
         opacity: "0"
@@ -402,24 +403,45 @@ let lumeSketchtl = gsap.timeline({
         scrub: true
     }
 });
-lumeSketchtl.to(lumeSketchParagraph1, {
-    transform: "translateY(-120px)"
-})
-.to(lumeSketchParagraph2, {
-    transform: "translateY(-120px)"
-}, 0)
-.to(lumeSketchParagraph3, {
-    transform: "translateY(-120px)"
-}, 0)
-.to(lumeSketchImg1, {
-    transform: "scale(1.2)"
-}, 0)
-.to(lumeSketchImg2, {
-    transform: "scale(1.2)"
-}, 0)
-.to(lumeSketchImg3, {
-    transform: "scale(1.2)"
-}, 0);
+if(mediaQuery.match){
+    lumeSketchtl.to(lumeSketchParagraph1, {
+        transform: "translateY(-120px)"
+    })
+    .to(lumeSketchParagraph2, {
+        transform: "translateY(-120px)"
+    }, 0)
+    .to(lumeSketchParagraph3, {
+        transform: "translateY(-120px)"
+    }, 0)
+    .to(lumeSketchImg1, {
+        transform: "scale(1.2)"
+    }, 0)
+    .to(lumeSketchImg2, {
+        transform: "scale(1.2)"
+    }, 0)
+    .to(lumeSketchImg3, {
+        transform: "scale(1.2)"
+    }, 0);
+} else {
+    lumeSketchtl.to(lumeSketchParagraph1, {
+        transform: "translateY(-50px)"
+    })
+    .to(lumeSketchParagraph2, {
+        transform: "translateY(-50px)"
+    }, 0)
+    .to(lumeSketchParagraph3, {
+        transform: "translateY(-50px)"
+    }, 0)
+    .to(lumeSketchImg1, {
+        transform: "scale(1.2)"
+    }, 0)
+    .to(lumeSketchImg2, {
+        transform: "scale(1.2)"
+    }, 0)
+    .to(lumeSketchImg3, {
+        transform: "scale(1.2)"
+    }, 0);
+}
 
 
 let lumeProcess1tl = gsap.timeline({
