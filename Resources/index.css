@@ -241,19 +241,19 @@ display: block;
   }
   .lume {
     margin: 0;
-    background-image: url("./Media/Startup.bip.672.png");
+    background-image: url("./Media/lume-main.png");
     flex: 1 auto;
     margin-top: 20px;
     transition: none;
   }
   .lume:hover {
-    background-image: url("./Media/Startup.bip.672.png");
+    background-image: url("./Media/lume-main-dark.png");
     flex-grow: 1;
   }
   .gleam {
     margin: 0;
     flex: 1 auto;
-    background-image: url("./Media/Startup.bip.643.png");
+    background-image: url("./Media/gleam-hero.png");
     transition: none;
   }
   .gleam:hover {
@@ -336,19 +336,19 @@ display: block;
   }
   .lume {
     margin: 0;
-    background-image: url("./Media/Startup.bip.672.png");
+    background-image: url("./Media/lume-main.png");
     flex: 1 auto;
     margin-top: 4.8vw;
     transition: none;
   }
   .lume:hover {
-    background-image: url("./Media/Startup.bip.672.png");
+    background-image: url("./Media/lume-main-dark.png");
     flex-grow: 1;
   }
   .gleam {
     margin: 0;
     flex: 1 auto;
-    background-image: url("./Media/Startup.bip.643.png");
+    background-image: url("./Media/gleam-hero.png");
     transition: none;
   }
   .gleam:hover {
