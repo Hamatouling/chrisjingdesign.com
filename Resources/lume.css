@@ -1310,21 +1310,25 @@ header {
     .lume-sketch-box,
     .lume-process-box,
     .lume-charge-box,
-    .spacial-intro-text{
+    .spacial-intro-text,
+    .spacial-design-box,
+    .lume-sum-box{
         max-width: 85vw;
     }
     .lume-brief-title,
     .lume-opp-title,
     .lume-process-text-title,
     .lume-charge-text-title,
-    .spacial-title-smaller {
+    .spacial-title-smaller,
+    .lume-sum-text-title {
         font-size: 6vw;
     }
     .lume-brief-paragraph,
     .lume-opp-paragraph,
     .lume-process-text-paragraph,
     .lume-charge-text-paragraph,
-    .spacial-paragraph-1 {
+    .spacial-paragraph-1,
+    .lume-sum-text-paragraph {
         font-size: 4.1vw;
     }
     .lume-sketch-group {
@@ -1398,6 +1402,22 @@ header {
     }
     .audience-text-box {
         flex-direction: column;
+    }
+    .lum-sum-section {
+        gap: 35px;
+    }
+    .lume-sum-img {
+        height: 150px;
+    }
+    .lume-sum-text {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .lume-sum-text-paragraph {
+        padding-top: 10px;
+    }
+    .lume-sum-text-right {
+        gap: 20px;
     }
 }
 
