@@ -239,7 +239,7 @@ if(mediaQuery.matches){
     lumeOutdoortl.to(lumeOutdoorImage, {
         //backgroundColor: "#eee",
         duration: 1.5,
-        backgroundPosition: "left -50% top 50%",
+        backgroundPosition: "left -100% top 50%",
     })
     .to(lumeOutdoorTitle, {
         opacity: "0"
@@ -291,7 +291,7 @@ if(mediaQuery.matches){
     lumeHometl.to(lumeHomeImage, {
         //backgroundColor: "#eee",
         duration: 1.5,
-        backgroundPosition: "left -50% top 50%"
+        backgroundPosition: "left -100% top 50%"
     })
     .to(lumeHomeTitle, {
         opacity: "0"
