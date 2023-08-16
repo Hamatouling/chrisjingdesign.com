@@ -624,6 +624,15 @@ p {
     object-fit: contain;
     object-position: right;
   }
+
+  .footer {
+    margin-top: 24vw;
+    padding-bottom: 24vw;
+  }
+  .footer img {
+    max-width: none;
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -704,6 +713,15 @@ p {
 
   .keep-in-touch-image {
     display: none;
+  }
+
+  .footer {
+    margin-top: 24vw;
+    padding-bottom: 24vw;
+  }
+  .footer img {
+    max-width: none;
+    width: 60vw;
   }
 
   /* format change */

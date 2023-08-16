@@ -19,7 +19,7 @@ const scene2 = new ScrollMagic.Scene({
     duration: 10000,
     triggerHook: 0
 })
-    .addIndicators()
+    //.addIndicators()
     .setClassToggle(contact, "visible")
     .addTo(controller);
 
@@ -29,6 +29,6 @@ const scene3 = new ScrollMagic.Scene({
     duration: 10000,
     triggerHook: 0.8
 })
-    .addIndicators()
+    /.addIndicators()
     .setClassToggle(passion, "visible")
     .addTo(controller);
