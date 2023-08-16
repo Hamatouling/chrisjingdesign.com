@@ -33,11 +33,17 @@
     src:local('SF Pro Display'), url("./Font/SF-Pro-Display-Medium.otf"),format("truetype");
   }
   
-  @font-face {
+  /* @font-face {
     font-family:'SF Pro Display';
     font-style:normal;
     font-weight:600;
     src:local('SF Pro Display'), url("./Font/SF-Pro-Display-Semibold.otf"),format("truetype");
+  } */
+  @font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:600;
+    src:local('SF Pro Display'), url("./Font/NHaasGroteskTXPro-65Md.ttf"),format("truetype");
   }
   
   @font-face {

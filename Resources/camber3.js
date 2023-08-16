@@ -97,7 +97,8 @@ scene2.on('update', e=>{
 setInterval(() =>{
     delay2 += (scrollpos2 - delay2) * accelamount;
     //console.log(scrollpos2);
-    v2.currentTime = delay2;
+    // v2.currentTime = delay2;
+    v2.currentTime = scrollpos2;
 }, 33.3);
 
 //Text 2
@@ -134,7 +135,8 @@ scene3.on('update', e=>{
 setInterval(() =>{
     delay3 += (scrollpos3 - delay3) * accelamount;
     //console.log(scrollpos3);
-    v3.currentTime = delay3;
+    // v3.currentTime = delay3;
+    v3.currentTime = scrollpos3;
 }, 33.3);
 
 //Text 2

@@ -138,14 +138,14 @@ header {
 .lume-intro-text {
     width: 80vw;
     max-width: 980px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ccc;
     text-align: center;
     background-color: transparent;
 }
 #title-text {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: transparent;
 }
 .lume-product-landing {
@@ -201,7 +201,7 @@ header {
     display: none;
     flex-direction: column;
     color: #000;
-    max-width: 500px;
+    max-width: 600px;
     background-color: transparent;
     opacity: 0;
     transform: translateY(100vh);
